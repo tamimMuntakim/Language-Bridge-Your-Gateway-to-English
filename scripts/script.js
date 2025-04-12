@@ -38,8 +38,6 @@ const fetchWord = (wordID) => {
 const login = () => {
     const nameInput = document.getElementById("name-input");
     const passwordInput = document.getElementById("password-input");
-    console.log(typeof nameInput.value);
-    console.log(typeof passwordInput.value);
     if (nameInput.value == "" && passwordInput.value == "") {
         Swal.fire({
             icon: "error",
@@ -180,7 +178,6 @@ const displayLevel = (level) => {
 }
 
 const displayWord = (word) => {
-    console.log(word);
     document.getElementById("modal-container").showModal();
     const detailsContainer = document.getElementById("word-container");
     detailsContainer.innerHTML = `
